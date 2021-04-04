@@ -71,19 +71,19 @@ window.addEventListener('keydown', function(event){
 //wheel
 const wheel = document.getElementById('wheel-button');
 
-wheel.addEventListener('click', function(event){
-    for (i = 0; i <= face.length; i++){
-        face[i].classList.remove('cube' + i);
+wheel.addEventListener('click', (event)=>{
+    for (i = 0; i < face.length; i++){
         face[i].classList.add('wheel' + i);
+        face[i].classList.remove('cube' + i);
     }
 });
 
 //cube
 const cube = document.getElementById('cube-button');
 
-cube.addEventListener('click', function(event){
-    for (i = 0; i <= face.length; i++){
-        face[i].classList.remove('wheel' + i);
+cube.addEventListener('click', (event)=>{
+    for (i = 0; i < face.length; i++){
         face[i].classList.add('cube' + i);
+        face[i].classList.remove('wheel' + i);
     }
 });
