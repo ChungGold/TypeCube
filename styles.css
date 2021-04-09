@@ -15,7 +15,7 @@ body {
 /* CONTROLS */
 #button-box {
     width: 200px;
-    height: 200px;
+    height: 100px;
     border: solid 1px rgb(31,234,0);
     color: rgb(31,234,0);
 }
@@ -85,68 +85,66 @@ body {
 /* CUBE */
 .cube0 {
     transform: translateZ(250px);
-    animation: wheel0 3s 1 reverse ease-in-out;
+
 }
 
 .cube1 {
     transform: translateZ(-250px);
-    animation: wheel1 3s 1 reverse ease-in-out;
+
 }
 
 .cube2 {
     transform: translateX(250px) rotateY(90deg);
-    animation: wheel2 3s 1 reverse ease-in-out;
+
 }
 
 .cube3 {
     transform: translateX(-250px) rotateY(90deg);
-    animation: wheel3 3s 1 reverse ease-in-out;
+
 }
 
 .cube4 {
     transform: translateY(250px) rotateX(90deg);
-    animation: wheel4 3s 1 reverse ease-in-out;
 }
 
 .cube5 {
     transform: translateY(-250px) rotateX(90deg);
-    animation: wheel5 3s 1 reverse ease-in-out;
 }
 
 /* WHEEL */
 
 .wheel0 {
-    transform: translateZ(250px) translateX(500px) rotateY(45deg);
+    transform: translateZ(230px) translateX(350px) rotateY(67.5deg);
     animation-fill-mode: forwards;
     animation: wheel0 3s 1 normal ease-in-out;
 }
 
 .wheel1 {
-    transform: translateZ(250px) translateX(-500px) rotateY(-45deg);
+    transform: translateZ(230px) translateX(-350px) rotateY(-67.5deg);
     animation-fill-mode: forwards;
     animation: wheel1 3s 1 normal ease-in-out;
 }
 
 .wheel2 {
-    transform: translateZ(-250px) translateX(500px) rotateY(-45deg);
+    transform: translateZ(-230px) translateX(350px) rotateY(-67.5deg);
     animation-fill-mode: forwards;
     animation: wheel2 3s 1 normal ease-in-out;
 }
 
 .wheel3 {
-    transform: translateZ(-250px) translateX(-500px) rotateY(45deg);
+    transform: translateZ(-230px) translateX(-350px) rotateY(67.5deg);
     animation-fill-mode: forwards;
     animation: wheel3 3s 1 normal ease-in-out;
 }
 
 .wheel4 {
-    transform: translateZ(500px);
+    transform: translateZ(460px);
     animation-fill-mode: forwards;
     animation: wheel4 3s 1 normal ease-in-out;
 }
 
 .wheel5 {
-    transform: translateZ(-500px);
+    transform: translateZ(-460px);
     animation-fill-mode: forwards;
     animation: wheel5 3s 1 normal ease-in-out;
 }
@@ -157,7 +155,7 @@ body {
         transform: translateZ(250px);
     }
     100% {
-        transform: translateZ(250px) translateX(500px) rotateY(45deg);
+        transform: translateZ(230px) translateX(350px) rotateY(67.5deg);
     }
 }
 
@@ -166,7 +164,7 @@ body {
         transform: translateZ(-250px);
     }
     100% {
-        transform: translateZ(250px) translateX(-500px) rotateY(-45deg);
+        transform: translateZ(230px) translateX(-350px) rotateY(-67.5deg);
     }
 }
 
@@ -175,7 +173,7 @@ body {
         transform: translateX(250px) rotateY(90deg);
     }
     100% {
-        transform: translateZ(-250px) translateX(500px) rotateY(-45deg);
+        transform: translateZ(-230px) translateX(350px) rotateY(-67.5deg);
     }
 }
 
@@ -184,7 +182,7 @@ body {
         transform: translateX(-250px) rotateY(90deg);
     }
     100% {
-        transform: translateZ(-250px) translateX(-500px) rotateY(45deg);
+        transform: translateZ(-230px) translateX(-350px) rotateY(67.5deg);
     }
 }
 
